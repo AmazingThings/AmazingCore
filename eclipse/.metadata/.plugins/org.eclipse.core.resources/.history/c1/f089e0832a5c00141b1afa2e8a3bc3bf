@@ -1,0 +1,22 @@
+package com.amazingthings.core.helpers;
+
+import net.minecraft.block.Block;
+import net.minecraft.world.World;
+
+public class MultiBlockHelper {
+
+	public boolean isMultiBlock = false;
+	private boolean isSingleSearch;
+	
+	public MultiBlockHelper(int dimensionx, int dimensiony, World w, 
+			Block singleSearch, int blockx, int blockz){
+		isSingleSearch = true;
+		boolean stillTrue;
+		for(int x = 0; x<dimensionx; x++){
+			for(int y = 0; y<dimensiony; y++){
+				
+			}
+		}
+	}
+	
+}

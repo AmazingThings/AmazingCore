@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.client.model.ModelBase"/>
+<fullyQualifiedTypeName name="net.minecraft.client.model.ModelRenderer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.tileentity.TileEntityFilter"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.render.RenderFilter"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.blocks.Filter"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.AmazingCore"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.IItemRenderer"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.render.IItemRendererFilter"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.model.ModelFilter"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+</qualifiedTypeNameHistroy>
