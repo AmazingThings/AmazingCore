@@ -1,0 +1,80 @@
+package com.amazingthings.core.tileentity;
+
+import com.amazingthings.core.recipes.VesselRecipes;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockChest;
+import net.minecraft.init.Blocks;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityVessel extends TileEntity {
+
+	public int amount;
+	public int burnTime;
+	public int fuelTime;
+	
+	public TileEntityVessel() {
+		
+	}
+	
+	public void readFromNBT(NBTTagCompound tag) {
+		super.readFromNBT(tag);
+
+        amount = tag.getInteger("amount");
+        burnTime = tag.getInteger("burnTime");
+        fuelTime = tag.getInteger("fuelTime");
+	}
+	
+	public void writeToNBT(NBTTagCompound tag) {
+		super.writeToNBT(tag);
+		
+		tag.setInteger("amount", amount);
+		tag.setInteger("burnTime", burnTime);
+		tag.setInteger("fuelTime", fuelTime);
+
+	}
+	
+	public void updateEntity() {
+		boolean isBurning = fuelTime > 0;
+		boolean sendUpdate = false;
+		
+		if(fuelTime > 0) {
+			fuelTime--;
+		}
+		if(!worldObj.isRemote) {
+			if(fuelTime == 0 && this.canSmelt()) {
+				if(fuelTime > 0) {
+					sendUpdate = true;
+					
+				}
+			}
+		}
+		if(fuelTime > 0 && canSmelt()) {
+			burnTime++;
+			
+			if(burnTime == 200) {
+				burnTime = 0;
+				smeltItem();
+			}
+		} 
+	}
+	
+	private void smeltItem() {
+		BlockChest block = Blocks.chest;
+		
+		if(worldObj.getBlock(xCoord, yCoord, yCoord) {
+			
+		}
+		
+	}
+
+	public boolean canSmelt() {
+		if(amount > 0 ) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

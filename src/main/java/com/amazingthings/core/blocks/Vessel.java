@@ -2,35 +2,62 @@ package com.amazingthings.core.blocks;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
+import com.amazingthings.core.AmazingCore;
 import com.amazingthings.core.tileentity.TileEntityVessel;
 
 public class Vessel extends BlockContainer{
+
+	public static TileEntityVessel tile;
 
 	public Vessel(Material m) {
 		super(m);
 		this.setBlockName("vessel");
 		this.setBlockTextureName("atcore:vessel");
-		
+
 	}
 
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
 		return new TileEntityVessel();
 	}
-	
-    public int getRenderType() {
-            return -1;
-    }
-    
-    public boolean isOpaqueCube() {
-            return false;
-    }
-    
-    public boolean renderAsNormalBlock() {
-            return false;
 
-    }
+	public int getRenderType() {
+		return -1;
+	}
+
+	public boolean isOpaqueCube() {
+		return false;
+	}
+
+	public boolean renderAsNormalBlock() {
+		return false;
+
+	}
+
+	public boolean onBlockActivated(World w, int x, int y, int z, EntityPlayer p, int i, float f, float f1, float f2) {
+
+		if(p.inventory.getCurrentItem().equals(AmazingCore.oreCopper) && !w.isRemote) {
+			if(tile.fuelTime > 0) {
+				tile.amount++;
+				tile.burnTime = tile.burnTime+100;
+				return true;
+			}
+
+		}
+		if(p.inventory.getCurrentItem().equals(Items.coal)) {
+			tile.fuelTime = tile.fuelTime+600;
+
+		}else{
+			return false;
+		}
+
+
+		return false;
+	}
 }

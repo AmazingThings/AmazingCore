@@ -98,6 +98,7 @@ public class AmazingCore {
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
 		proxy.registerRenderThings();
+		GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 	}
 
 	@EventHandler
@@ -145,9 +146,6 @@ public class AmazingCore {
 		GameRegistry.registerBlock(vessel, ItemBlockFilter.class, "vessel");
 		GameRegistry.registerBlock(filter, ItemBlockFilter.class, "filter");
 		// ^^^ REGISTER MODELS LIKE THIS ^^^
-	}
 	
-	private void registerWorldGen(){
-		GameRegistry.registerWorldGenerator(new WorldGenOres(), 15);
 	}
 }

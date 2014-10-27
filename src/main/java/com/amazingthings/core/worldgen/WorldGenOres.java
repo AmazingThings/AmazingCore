@@ -27,19 +27,21 @@ public class WorldGenOres implements IWorldGenerator{
 		}
 	}
 
-	private void generateNether(World world, Random random, int i, int j) {
+	private void generateNether(World world, Random random, int cX, int cZ) {
 	}
 
-	private void generateSurface(World world, Random random, int i, int j) {
-		
-		int x = random.nextInt(16) + i;
-		int z = random.nextInt(16) + j;
-		int y = 40 + random.nextInt(256-40);
-		
-		(new WorldGenMinable(AmazingCore.oreBauxite, 13)).generate(world, random, x, y, z);
+	private void generateSurface(World world, Random rand, int cX, int cZ) {
+		for(int k = 0; k < 10; k++) {
+			int x = cX + rand.nextInt(16);
+			int y = rand.nextInt(64);
+			int z = cZ + rand.nextInt(16);
+			
+        	(new WorldGenMinable(AmazingCore.oreBauxite, 13)).generate(world, rand, x, y, z);
+
+		}
 	}
 
-	private void generateEnd(World world, Random random, int i, int j) {
+	private void generateEnd(World world, Random random, int cX, int cZ) {
 	}
 
 }
