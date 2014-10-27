@@ -1,0 +1,5 @@
+package com.amazingthings.core.render;
+
+public class IItemRendererFilter {
+
+}

@@ -1,0 +1,81 @@
+package com.amazingthings.core.render;
+
+import org.lwjgl.opengl.GL11;
+
+import com.amazingthings.core.model.ModelFilter;
+
+import cpw.mods.fml.client.FMLClientHandler;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderBlocks;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.IItemRenderer;
+
+public class IItemRendererFilter implements IItemRenderer {
+
+	protected ModelFilter model;
+
+	public IItemRendererFilter(){
+		model = new ModelFilter();
+	}
+
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
+		switch(type){
+		case ENTITY: return true;
+		case EQUIPPED_FIRST_PERSON: return true;
+		case EQUIPPED: return true;
+		case INVENTORY: return true;
+		default: return false;
+		}
+	}
+
+	@Override
+	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item,
+			ItemRendererHelper helper) {
+		return false;
+	}
+
+	@Override
+    public void renderItem(ItemRenderType type, ItemStack item, Object... data)
+    {
+        float scale = 1.08f;
+        switch (type)
+        {
+            case ENTITY:
+                render((RenderBlocks) data[0], item, 0, 0, 0, scale);
+                break;
+            case EQUIPPED:
+                render((RenderBlocks) data[0], item, 0, 0, 0.5f, scale);
+                break;
+            case EQUIPPED_FIRST_PERSON:
+                render((RenderBlocks) data[0], item, +0.5f, 0.5f, +0.5f, scale);
+                break;
+            case INVENTORY:
+                render((RenderBlocks) data[0], item, -0.5f, -0.75f, -0.5f, scale);
+                break;
+
+            default:
+                return;
+        }
+    }
+
+    private void render(RenderBlocks render, ItemStack item, float x, float y, float z, float scale)
+    {
+        GL11.glDisable(GL11.GL_LIGHTING);
+        GL11.glDisable(GL11.GL_CULL_FACE);
+        GL11.glPushMatrix();
+        GL11.glTranslatef(x, y, z);
+        GL11.glScalef(scale, scale, scale);
+        GL11.glRotatef(180f, 0f, 1f, 0f);
+        ResourceLocation test = new ResourceLocation("atcore:textures/model/Vessel.png");
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(test);
+        model.render((Entity)null, 0, 0, 0, 0, 0, 0.0625f);
+        GL11.glPopMatrix();
+        GL11.glEnable(GL11.GL_CULL_FACE);
+        GL11.glEnable(GL11.GL_LIGHTING);
+
+    }
+}

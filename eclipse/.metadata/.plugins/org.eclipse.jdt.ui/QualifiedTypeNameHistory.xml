@@ -17,4 +17,7 @@
 <fullyQualifiedTypeName name="com.amazingthings.core.model.ModelFilter"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderBlocks"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.client.FMLClientHandler"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,33 @@
+package com.amazingthings.core.blocks;
+
+import com.amazingthings.core.tileentity.TileEntityFilter;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class Filter extends BlockContainer {
+
+	protected Filter() {
+		super(Material.iron);
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+		return new TileEntityFilter();
+	}
+
+	public int getRenderType() {
+		return -1;
+	}
+
+	public boolean isOpaqueCube() {
+		return false;
+	}
+
+	public boolean renderAsNormalBlock() {
+		return false;
+	}
+
+}

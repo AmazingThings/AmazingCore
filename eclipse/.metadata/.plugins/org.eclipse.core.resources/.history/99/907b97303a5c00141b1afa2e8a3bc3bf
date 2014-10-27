@@ -1,0 +1,5 @@
+package com.amazingthings.core.tileentity;
+
+public class TileEntityFilter {
+
+}

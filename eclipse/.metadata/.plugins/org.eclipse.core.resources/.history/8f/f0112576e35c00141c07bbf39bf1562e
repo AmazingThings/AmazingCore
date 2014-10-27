@@ -1,0 +1,61 @@
+package com.amazingthings.core.render;
+
+import org.lwjgl.opengl.GL11;
+
+import com.amazingthings.core.model.ModelFilter;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.IItemRenderer;
+
+public class IItemRendererFilter implements IItemRenderer {
+
+	protected ModelFilter model;
+	
+	public IItemRendererFilter(){
+		model = new ModelFilter();
+	}
+	
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
+		switch(type){
+		case EQUIPPED: return true;
+		case INVENTORY: return true;
+		default: return false;
+		}
+	}
+
+	@Override
+	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item,
+			ItemRendererHelper helper) {
+		return false;
+	}
+
+	@Override
+	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+		switch(type){
+		case EQUIPPED: {
+			GL11.glPushMatrix();
+			
+			//GL11.glRotatef(180F, 0F, 0F, 0F);
+			
+			Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("atcore:textures/model/Filter.png"));
+			this.model.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
+			
+			GL11.glPopMatrix();
+		}
+		case INVENTORY: {
+			/*GL11.glPushMatrix();
+			
+			Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("atcore:textures/model/Filter.png"));
+			this.model.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
+			
+			GL11.glPopMatrix();*/
+		}
+		default: break;
+		}
+	}
+
+}

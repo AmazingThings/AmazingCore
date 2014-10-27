@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+import com.amazingthings.core.blocks.Filter;
 import com.amazingthings.core.blocks.OreBauxite;
 import com.amazingthings.core.blocks.OreCopper;
 import com.amazingthings.core.blocks.OreIlmenite;
@@ -12,6 +13,7 @@ import com.amazingthings.core.blocks.OreLead;
 import com.amazingthings.core.blocks.OreSilver;
 import com.amazingthings.core.blocks.OreTin;
 import com.amazingthings.core.blocks.Vessel;
+import com.amazingthings.core.itemblocks.ItemBlockFilter;
 import com.amazingthings.core.items.IngotCopper;
 import com.amazingthings.core.proxy.CommonProxy;
 
@@ -46,6 +48,7 @@ public class AmazingCore {
 	public static Block oreSilver;
 	
 	public static Block vessel;
+	public static Block filter;
 	
 	public static Item ingotCopper;
 	public static Item ingotTin;
@@ -90,8 +93,14 @@ public class AmazingCore {
 		oreSilver.setHarvestLevel("pickaxe", 3);
 		
 		vessel = new Vessel(Material.clay).setCreativeTab(tabCore).setHardness(3.0f);
+		filter = new Filter().setCreativeTab(tabCore).setHardness(3.0F);
 		
-		GameRegistry.registerBlock(vessel, "vessel");
+		//GameRegistry.registerBlock(vessel, "vessel");
+		//GameRegistry.registerBlock(filter, "filter");
+		// ^^^ DO NOT REGISTER MODELS LIKE THIS ^^^
+		GameRegistry.registerBlock(vessel, ItemBlockFilter.class, "vessel");
+		GameRegistry.registerBlock(filter, ItemBlockFilter.class, "filter");
+		// ^^^ REGISTER MODELS LIKE THIS ^^^
 		
 		ingotCopper = new IngotCopper();
 		
