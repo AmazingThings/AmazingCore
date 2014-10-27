@@ -16,7 +16,6 @@ import com.amazingthings.core.blocks.Vessel;
 import com.amazingthings.core.itemblocks.ItemBlockFilter;
 import com.amazingthings.core.items.IngotCopper;
 import com.amazingthings.core.proxy.CommonProxy;
-import com.amazingthings.core.worldgen.WorldGenOres;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -74,7 +73,7 @@ public class AmazingCore {
 
 		@Override
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(vessel);
+			return ingotCopper;
 		}
 
 	};
@@ -87,10 +86,10 @@ public class AmazingCore {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
-							   //MAY BE REPLACED WITH:
-		registerBlocks();      //Blocks.registerBlocks();
-		registerItems();       //Items.registerItems();
-		registerModelBlocks(); //Blocks.registerModelBlocks
+
+		registerBlocks();
+		registerItems();
+		registerModelBlocks();
 		Recipes.registerRecipes();
 		Recipes.registerCustomMachineRecipes();
 	}
@@ -123,13 +122,6 @@ public class AmazingCore {
 
 		vessel = new Vessel(Material.clay).setCreativeTab(tabCore).setHardness(3.0f);
 		filter = new Filter().setCreativeTab(tabCore).setHardness(3.0F);
-		
-		GameRegistry.registerBlock(oreCopper, "atcore:orecopper");
-		GameRegistry.registerBlock(oreTin, "atcore:oretin");
-		GameRegistry.registerBlock(oreLead, "atcore:orelead");
-		GameRegistry.registerBlock(oreBauxite, "atcore:orebauxite");
-		GameRegistry.registerBlock(oreIlmenite, "atcore:oreilmenite");
-		GameRegistry.registerBlock(oreSilver, "atcore:oresilver");
 	}
 
 	private void registerItems(){
@@ -145,9 +137,5 @@ public class AmazingCore {
 		GameRegistry.registerBlock(vessel, ItemBlockFilter.class, "vessel");
 		GameRegistry.registerBlock(filter, ItemBlockFilter.class, "filter");
 		// ^^^ REGISTER MODELS LIKE THIS ^^^
-	}
-	
-	private void registerWorldGen(){
-		GameRegistry.registerWorldGenerator(new WorldGenOres(), 15);
 	}
 }
