@@ -5,7 +5,7 @@ import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 import com.amazingthings.core.AmazingCore;
-import com.amazingthings.core.render.IItemRendererFilter;
+import com.amazingthings.core.render.IItemRendererBlock;
 import com.amazingthings.core.render.RenderFilter;
 import com.amazingthings.core.render.RenderVessel;
 import com.amazingthings.core.tileentity.TileEntityFilter;
@@ -20,6 +20,6 @@ public class ClientProxy extends CommonProxy {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityVessel.class, new RenderVessel());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityFilter.class, new RenderFilter());
 		
-		RenderingRegistry.registerBlockHandler(new IItemRendererFilter());
+		RenderingRegistry.registerBlockHandler(new IItemRendererBlock());
 	}
 }

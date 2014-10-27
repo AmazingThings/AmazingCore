@@ -34,7 +34,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class IItemRendererFilter implements ISimpleBlockRenderingHandler{
+public class IItemRendererBlock implements ISimpleBlockRenderingHandler{
 
 	@Override
 	 public void renderInventoryBlock(Block block, int metadata, int modelID, RenderBlocks renderer) {
