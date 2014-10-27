@@ -105,6 +105,9 @@ public class AmazingCore {
 		ingotCopper = new IngotCopper();
 		
 		GameRegistry.registerItem(ingotCopper, "ingotCopper");
+		
+		Recipes.registerRecipes();
+		Recipes.registerCustomMachineRecipes();
 	}
 	
 	@EventHandler
