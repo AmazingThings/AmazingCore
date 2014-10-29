@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="com.amazingthings.core.items.Items"/>
 <fullyQualifiedTypeName name="com.amazingthings.core.blocks.Blocks"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="com.amazingthings.core.itemblocks.ItemBlockModel"/>
 </qualifiedTypeNameHistroy>

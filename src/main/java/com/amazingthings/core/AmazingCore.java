@@ -9,6 +9,7 @@ import com.amazingthings.core.blocks.*;
 import com.amazingthings.core.itemblocks.*;
 import com.amazingthings.core.items.*;
 import com.amazingthings.core.proxy.CommonProxy;
+import com.amazingthings.core.recipes.Recipes;
 import com.amazingthings.core.worldgen.*;
 
 import cpw.mods.fml.common.Mod;
@@ -19,7 +20,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-
 import static com.amazingthings.core.blocks.Blocks.*;
 import static com.amazingthings.core.items.Items.*;
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Recipes.java&apos; to &apos;Minecraft/src/main/java/com.amazingthings.core.recipes&apos;&#x0D;&#x0A;- Original project: &apos;Minecraft&apos;&#x0D;&#x0A;- Destination element: &apos;Minecraft/src/main/java/com.amazingthings.core.recipes&apos;&#x0D;&#x0A;- Original element: &apos;com.amazingthings.core.Recipes.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.amazingthings.core.recipes" element1="/src\/main\/java&lt;com.amazingthings.core{Recipes.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1414606886283" units="1" version="1.0"/>
+</session>

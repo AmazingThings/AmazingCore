@@ -24,4 +24,8 @@ public class Items {
 		GameRegistry.registerItem(ingotAluminium, "ingotAluminium");
 	}
 	
+	public static void registerModelItems(){
+		
+	}
+	
 }
