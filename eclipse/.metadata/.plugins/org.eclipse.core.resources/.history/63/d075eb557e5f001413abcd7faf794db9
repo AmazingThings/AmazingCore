@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 import com.amazingthings.core.AmazingCore;
-import com.amazingthings.core.itemblocks.ItemBlockModel;
+import com.amazingthings.core.itemblocks.ItemBlockFilter;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -47,8 +47,8 @@ public class Blocks {
 	}
 	
 	public static void registerModelBlocks(){
-		GameRegistry.registerBlock(vessel, ItemBlockModel.class, "vessel");
-		GameRegistry.registerBlock(filter, ItemBlockModel.class, "filter");
+		GameRegistry.registerBlock(vessel, ItemBlockFilter.class, "vessel");
+		GameRegistry.registerBlock(filter, ItemBlockFilter.class, "filter");
 	}
 	
 }

@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.world.World;
@@ -61,8 +60,8 @@ public class Vessel extends BlockContainer{
 			return false;
 		}
 		
-		if(TileEntityFurnace.isItemFuel(item)){
-			tile.fuelTime += TileEntityFurnace.getItemBurnTime(item);
+		if(GameRegistry.getFuelValue(item) > 0){
+			tile.fuelTime += GameRegistry.getFuelValue(item);
 			item.stackSize--;
 			return true;
 		}
