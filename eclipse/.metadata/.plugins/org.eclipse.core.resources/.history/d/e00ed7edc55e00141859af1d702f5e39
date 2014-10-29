@@ -1,0 +1,148 @@
+package com.amazingthings.core.tileentity;
+
+import com.amazingthings.core.AmazingCore;
+import com.amazingthings.core.items.Items;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockChest;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.init.Blocks;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityChest;
+
+public class TileEntityVessel extends TileEntity {
+
+	public int amount;
+	public int burnTime;
+	public int fuelTime;
+	public Item Smelting;
+
+	public TileEntityVessel() {
+
+	}
+
+	public void readFromNBT(NBTTagCompound tag) {
+		super.readFromNBT(tag);
+
+		amount = tag.getInteger("amount");
+		burnTime = tag.getInteger("burnTime");
+		fuelTime = tag.getInteger("fuelTime");
+	}
+
+	public void writeToNBT(NBTTagCompound tag) {
+		super.writeToNBT(tag);
+
+		tag.setInteger("amount", amount);
+		tag.setInteger("burnTime", burnTime);
+		tag.setInteger("fuelTime", fuelTime);
+
+	}
+
+	public void updateEntity() {
+		boolean isBurning = fuelTime > 0;
+		boolean sendUpdate = false;
+
+		if(fuelTime > 0) {
+			fuelTime--;
+		}
+		if(!worldObj.isRemote) {
+			if(fuelTime == 0 && this.canSmelt()) {
+				if(fuelTime > 0) {
+					sendUpdate = true;
+
+				}
+			}
+		}
+		if(fuelTime > 0 && canSmelt()) {
+			burnTime++;
+
+			if(burnTime == 200) {
+				burnTime = 0;
+				smeltItem();
+			}
+		} 
+	}
+
+	private void smeltItem() {
+		boolean jobDone = false;
+		
+		IInventory invUp = (IInventory)worldObj.getTileEntity(xCoord, yCoord+1, zCoord);
+		IInventory invDown = (IInventory)worldObj.getTileEntity(xCoord, yCoord-1, zCoord);
+		IInventory invFront = (IInventory)worldObj.getTileEntity(xCoord, yCoord, zCoord+1);
+		IInventory invBack = (IInventory)worldObj.getTileEntity(xCoord, yCoord, zCoord-1);
+		IInventory invRigth = (IInventory)worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
+		IInventory invLeft = (IInventory)worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
+
+		IInventory inv = null;
+		
+		Item item = Items.ingotAluminium;
+
+		for(int i = 0; i < 1; i++){
+			if(invUp != null){
+				inv = invUp;
+				break;
+			}
+			if(invDown != null){
+				inv = invDown;
+				break;
+			}
+			if(invFront != null){
+				inv = invFront;
+				break;
+			}
+			if(invBack != null){
+				inv = invBack;
+				break;
+			}
+			if(invRigth != null){
+				inv = invRigth;
+				break;
+			}
+			if(invLeft != null){
+				inv = invLeft;
+				break;
+			}
+		}
+		
+		if(inv == null){
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(item)));
+			amount--;
+			if(amount == 0){
+				Smelting = null;
+			}
+			jobDone = true;
+		}else{
+			for(int i = 0; i < inv.getSizeInventory(); i++){
+				if(inv.isItemValidForSlot(i, new ItemStack(item))){
+					if(inv.getStackInSlot(i) == null || inv.getStackInSlot(i).getItem() == item && inv.getStackInSlot(i).stackSize + 1 <= inv.getInventoryStackLimit()){
+						inv.setInventorySlotContents(i, new ItemStack(item, inv.getStackInSlot(i).stackSize + 1));
+						jobDone=true;
+						break;
+					}
+				}
+			}
+		}
+		
+		if(!jobDone){
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(item)));
+			amount--;
+			if(amount == 0){
+				Smelting = null;
+			}
+		}
+
+	}
+
+	public boolean canSmelt() {
+		if(amount > 0 ) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

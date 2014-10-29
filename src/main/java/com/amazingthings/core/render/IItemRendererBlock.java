@@ -5,6 +5,7 @@ import org.lwjgl.opengl.GL11;
 import com.amazingthings.core.AmazingCore;
 import com.amazingthings.core.ResourceType;
 import com.amazingthings.core.Resources;
+import com.amazingthings.core.blocks.Blocks;
 import com.amazingthings.core.blocks.Filter;
 import com.amazingthings.core.model.ModelFilter;
 import com.amazingthings.core.model.ModelVessel;
@@ -41,9 +42,9 @@ public class IItemRendererBlock implements ISimpleBlockRenderingHandler{
 		GL11.glPushMatrix();
 		GL11.glTranslatef(-0.5F, -0.5F, -0.5F);
 
-		if(block == AmazingCore.filter){
+		if(block == Blocks.filter){
 			TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntityFilter(), 0.0D, 0.0D, 0.0D, 0.0F);
-		}else if(block == AmazingCore.vessel){
+		}else if(block == Blocks.vessel){
 			TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntityVessel(), 0.0D, 0.0D, 0.0D, 0.0F);
 		}
 		GL11.glPopMatrix();

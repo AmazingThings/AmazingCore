@@ -1,8 +1,8 @@
-[20:43:32] [main/INFO]: Setting user: Player347
-[20:43:35] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:43:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
-[20:43:44] [Sound Library Loader/INFO]: Sound engine started
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
+[15:07:07] [main/INFO]: Setting user: Player781
+[15:07:09] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:07:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
+[15:07:16] [Sound Library Loader/INFO]: Sound engine started
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -14,20 +14,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -39,20 +39,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -64,20 +64,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -89,20 +89,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -114,20 +114,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -139,20 +139,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
+[15:07:17] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -164,23 +164,23 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:47] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:43:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:43:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
+[15:07:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:07:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:07:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -195,20 +195,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -223,20 +223,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -251,20 +251,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -279,20 +279,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -307,20 +307,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -335,20 +335,20 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:49] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
+[15:07:18] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -363,58 +363,38 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_20]
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[20:43:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:43:49] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:43:50] [Sound Library Loader/INFO]: Sound engine started
-[20:44:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[20:44:31] [Server thread/INFO]: Generating keypair
-[20:44:31] [Server thread/INFO]: Preparing start region for level 0
-[20:44:32] [Server thread/INFO]: Preparing spawn area: 30%
-[20:44:33] [Server thread/INFO]: Changing view distance to 2, from 10
-[20:44:35] [Server thread/INFO]: Player347[local:E:c575fceb] logged in with entity id 363 at (188.43441810702652, 71.0, -115.02163066425044)
-[20:44:35] [Server thread/INFO]: Player347 joined the game
-[20:44:35] [Server thread/INFO]: Saving and pausing game...
-[20:44:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:44:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:44:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:44:39] [Server thread/INFO]: Stopping server
-[20:44:39] [Server thread/INFO]: Saving players
-[20:44:39] [Server thread/INFO]: Saving worlds
-[20:44:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:44:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:44:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:44:42] [Client thread/FATAL]: Unreported exception thrown!
-java.lang.NullPointerException
-	at com.amazingthings.core.blocks.Vessel.onBlockActivated(Vessel.java:45) ~[Vessel.class:?]
-	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376) ~[PlayerControllerMP.class:?]
-	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:951) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_11]
-	at GradleStart.bounce(GradleStart.java:107) [start/:?]
-	at GradleStart.startClient(GradleStart.java:100) [start/:?]
-	at GradleStart.main(GradleStart.java:55) [start/:?]
+[15:07:18] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:07:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:07:19] [Sound Library Loader/INFO]: Sound engine started
+[15:07:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:07:22] [Server thread/INFO]: Generating keypair
+[15:07:23] [Server thread/INFO]: Preparing start region for level 0
+[15:07:24] [Server thread/INFO]: Changing view distance to 9, from 10
+[15:07:24] [Server thread/INFO]: Player781[local:E:7617aaf2] logged in with entity id 322 at (-71.56516726896103, 4.529367595578466, 1621.5490149508207)
+[15:07:24] [Server thread/INFO]: Player781 joined the game
+[15:07:49] [Server thread/INFO]: Player781 has just earned the achievement [Taking Inventory]
+[15:07:49] [Client thread/INFO]: [CHAT] Player781 has just earned the achievement [Taking Inventory]
+[15:12:17] [Server thread/INFO]: Saving and pausing game...
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:12:17] [Server thread/INFO]: Stopping server
+[15:12:17] [Server thread/INFO]: Saving players
+[15:12:17] [Server thread/INFO]: Saving worlds
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:12:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:12:18] [Client thread/INFO]: Stopping!

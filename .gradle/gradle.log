@@ -5,6 +5,54 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
+:clean
+:cleanCache
+:extractMcpData
+:getVersionJson
+:extractUserDev
+Download http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.2.1230/forge-1.7.10-10.13.2.1230-userdev.jar
+:genSrgs
+:extractNatives
+:getAssetsIndex
+:getAssets
+Current status: 4/686   0%
+Current status: 121/686   17%
+Current status: 256/686   37%
+Current status: 324/686   47%
+Current status: 414/686   60%
+Current status: 461/686   67%
+Current status: 530/686   77%
+Current status: 594/686   86%
+Current status: 638/686   93%
+Current status: 652/686   95%
+:makeStartwarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:downloadMcpTools
+:downloadClient
+:downloadServer
+:mergeJars
+Adding cpw/mods/fml/relauncher/SideOnly.class
+Adding cpw/mods/fml/relauncher/Side.class
+:deobfuscateJar
+Applying SpecialSource...
+Applying Exceptor...
+:decompile
+:processSources
+Injecting fml files
+Applying fml patches
+Applying forge patches
+:remapJar
+:extractMinecraftSrc
+:recompMinecraftwarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:repackMinecraft
+:setupDecompWorkspace
 :eclipseClasspath
 :eclipseJdt
 :eclipseProject
@@ -12,4 +60,4 @@
 
 BUILD SUCCESSFUL
 
-Total time: 32.176 secs
+Total time: 13 mins 42.183 secs
