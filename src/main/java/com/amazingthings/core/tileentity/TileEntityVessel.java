@@ -1,6 +1,7 @@
 package com.amazingthings.core.tileentity;
 
 import com.amazingthings.core.AmazingCore;
+import com.amazingthings.core.recipes.VesselRecipes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
@@ -21,6 +22,7 @@ public class TileEntityVessel extends TileEntity {
 	public int amount;
 	public int burnTime;
 	public int fuelTime;
+	public int degreesCelcius;
 	public Item Smelting;
 
 	public TileEntityVessel() {
@@ -33,6 +35,7 @@ public class TileEntityVessel extends TileEntity {
 		amount = tag.getInteger("amount");
 		burnTime = tag.getInteger("burnTime");
 		fuelTime = tag.getInteger("fuelTime");
+		degreesCelcius = tag.getInteger("degreesCelcius");
 	}
 
 	public void writeToNBT(NBTTagCompound tag) {
@@ -41,19 +44,13 @@ public class TileEntityVessel extends TileEntity {
 		tag.setInteger("amount", amount);
 		tag.setInteger("burnTime", burnTime);
 		tag.setInteger("fuelTime", fuelTime);
-
+		tag.setInteger("degreesCelcius", degreesCelcius);
 	}
 
 	public void updateEntity() {
-		
-		if(Smelting == Items.coal){
-			fuelTime += (amount*200);
-			amount = 0;
-			Smelting = null;
-		}
-		
 		boolean isBurning = fuelTime > 0;
 		boolean sendUpdate = false;
+		degreesCelcius = getRequiredDegrees(); //TODO: Remove this and replace with when using fuel degreesCelcius++; at random?
 
 		if(fuelTime > 0) {
 			fuelTime--;
@@ -66,17 +63,18 @@ public class TileEntityVessel extends TileEntity {
 				}
 			}
 		}
-		if(fuelTime > 0 && canSmelt()) {
+		if(degreesCelcius >= getRequiredDegrees() && canSmelt()) {
 			burnTime++;
 
 			if(burnTime == 200) {
 				burnTime = 0;
-				smeltItem();
+				smeltItems(getSmeltingResult().getItem(), getSmeltingResult().stackSize);
 			}
 		} 
+		if(!canSmelt() && amount > 0)smeltItem(Smelting);
 	}
 
-	private void smeltItem() {
+	private void smeltItem(Item output) {
 		boolean jobDone = false;
 		
 		IInventory invUp = (IInventory)worldObj.getTileEntity(xCoord, yCoord+1, zCoord);
@@ -87,8 +85,6 @@ public class TileEntityVessel extends TileEntity {
 		IInventory invLeft = (IInventory)worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
 
 		IInventory inv = null;
-		
-		Item item = ingotAluminium;
 
 		for(int i = 0; i < 1; i++){
 			if(invUp != null){
@@ -118,13 +114,13 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(inv == null){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(item)));
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output)));
 			jobDone = true;
 		}else{
 			for(int i = 0; i < inv.getSizeInventory(); i++){
-				if(inv.isItemValidForSlot(i, new ItemStack(item))){
-					if(inv.getStackInSlot(i) == null || inv.getStackInSlot(i).getItem() == item && inv.getStackInSlot(i).stackSize + 1 <= inv.getInventoryStackLimit()){
-						inv.setInventorySlotContents(i, new ItemStack(item, inv.getStackInSlot(i) != null ? inv.getStackInSlot(i).stackSize + 1 : 1));
+				if(inv.isItemValidForSlot(i, new ItemStack(output))){
+					if(inv.getStackInSlot(i) == null || inv.getStackInSlot(i).getItem() == output && inv.getStackInSlot(i).stackSize + 1 <= inv.getInventoryStackLimit()){
+						inv.setInventorySlotContents(i, new ItemStack(output, inv.getStackInSlot(i) != null ? inv.getStackInSlot(i).stackSize + 1 : 1));
 						jobDone=true;
 						break;
 					}
@@ -133,7 +129,7 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(!jobDone){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(item)));
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output)));
 			amount--;
 			if(amount == 0){
 				Smelting = null;
@@ -146,12 +142,87 @@ public class TileEntityVessel extends TileEntity {
 		}
 
 	}
+	
+	private void smeltItems(Item output, int amount) {
+		boolean jobDone = false;
+		
+		IInventory invUp = (IInventory)worldObj.getTileEntity(xCoord, yCoord+1, zCoord);
+		IInventory invDown = (IInventory)worldObj.getTileEntity(xCoord, yCoord-1, zCoord);
+		IInventory invFront = (IInventory)worldObj.getTileEntity(xCoord, yCoord, zCoord+1);
+		IInventory invBack = (IInventory)worldObj.getTileEntity(xCoord, yCoord, zCoord-1);
+		IInventory invRigth = (IInventory)worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
+		IInventory invLeft = (IInventory)worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
+
+		IInventory inv = null;
+
+		for(int i = 0; i < 1; i++){
+			if(invUp != null){
+				inv = invUp;
+				break;
+			}
+			if(invDown != null){
+				inv = invDown;
+				break;
+			}
+			if(invFront != null){
+				inv = invFront;
+				break;
+			}
+			if(invBack != null){
+				inv = invBack;
+				break;
+			}
+			if(invRigth != null){
+				inv = invRigth;
+				break;
+			}
+			if(invLeft != null){
+				inv = invLeft;
+				break;
+			}
+		}
+		
+		if(inv == null){
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output, amount)));
+			jobDone = true;
+		}else{
+			for(int i = 0; i < inv.getSizeInventory(); i++){
+				if(inv.isItemValidForSlot(i, new ItemStack(output))){
+					if(inv.getStackInSlot(i) == null || inv.getStackInSlot(i).getItem() == output && inv.getStackInSlot(i).stackSize + amount <= inv.getInventoryStackLimit()){
+						inv.setInventorySlotContents(i, new ItemStack(output, inv.getStackInSlot(i) != null ? inv.getStackInSlot(i).stackSize + amount : amount));
+						jobDone=true;
+						break;
+					}
+				}
+			}
+		}
+		
+		if(!jobDone){
+			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output, amount)));
+			this.amount--;
+			if(this.amount == 0){
+				Smelting = null;
+			}
+		}else{
+			this.amount--;
+			if(this.amount == 0){
+				Smelting = null;
+			}
+		}
+
+	}
 
 	public boolean canSmelt() {
 		if(amount > 0 ) {
-			return true;
-		}else {
-			return false;
+			if(VesselRecipes.smelting().getSmeltingResult(new ItemStack(Smelting)) != null)return true;
 		}
+		return false;
+	}
+	
+	public ItemStack getSmeltingResult(){
+		return VesselRecipes.smelting().getSmeltingResult(new ItemStack(Smelting));
+	}
+	public int getRequiredDegrees(){
+		return VesselRecipes.smelting().getDegreesNeeded(new ItemStack(Smelting));
 	}
 }

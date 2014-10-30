@@ -5,21 +5,35 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
+:clean
+:cleanCache
 :extractMcpData
 :getVersionJson
 :extractUserDev
-Download http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.2.1230/forge-1.7.10-10.13.2.1230-userdev.jar
 :genSrgs
 :extractNatives
 :getAssetsIndex
 :getAssets
+Current status: 5/686   0%
+Current status: 131/686   19%
+Current status: 215/686   31%
+Current status: 306/686   44%
+Current status: 341/686   49%
+Current status: 435/686   63%
+Current status: 494/686   72%
+Current status: 557/686   81%
+Current status: 586/686   85%
+Current status: 650/686   94%
+Current status: 686/686   100%
 :makeStartwarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
 :downloadMcpTools
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:mergeJars SKIPPED
+:downloadClient
+:downloadServer
+:mergeJars
+Adding cpw/mods/fml/relauncher/SideOnly.class
+Adding cpw/mods/fml/relauncher/Side.class
 :deobfuscateJar
 Applying SpecialSource...
 Applying Exceptor...
@@ -38,13 +52,10 @@ Note: Recompile with -Xlint:unchecked for details.
 :repackMinecraft
 :setupDecompWorkspace
 :eclipseClasspath
-Download https://libraries.minecraft.net/net/minecraft/launchwrapper/1.11/launchwrapper-1.11-sources.jar
-Download http://repo1.maven.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3-sources.jar
-Download http://repo1.maven.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3-javadoc.jar
 :eclipseJdt
 :eclipseProject
 :eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 7 mins 26.955 secs
+Total time: 13 mins 29.229 secs

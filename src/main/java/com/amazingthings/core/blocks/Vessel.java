@@ -33,10 +33,12 @@ public class Vessel extends BlockContainer{
 		return tile = new TileEntityVessel();
 	}
 
+	@Override
 	public int getRenderType() {
 		return -1;
 	}
 
+	@Override
 	public boolean isOpaqueCube() {
 		return false;
 	}
@@ -47,11 +49,13 @@ public class Vessel extends BlockContainer{
         return true;
     }
 
+	@Override
 	public boolean renderAsNormalBlock() {
 		return false;
 
 	}
 
+	@Override
 	public boolean onBlockActivated(World w, int x, int y, int z, EntityPlayer p, int i, float f, float f1, float f2) {
 
 		TileEntityVessel tile = (TileEntityVessel)w.getTileEntity(x, y, z);
@@ -79,6 +83,5 @@ public class Vessel extends BlockContainer{
 		}
 
 		return true;
-
 	}
 }
