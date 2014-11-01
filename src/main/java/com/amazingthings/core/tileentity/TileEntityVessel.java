@@ -139,8 +139,21 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(inv == null){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output)));
+			
+			EntityItem item = new EntityItem(worldObj, xCoord, yCoord + 0.5F, zCoord, new ItemStack(output));
+			item.lifespan = 1200;
+			item.delayBeforeCanPickup = 10;
+			
+			float f3 = 0.05f;
+			item.motionX = (float) worldObj.rand.nextGaussian() * f3;
+			item.motionY = (float) worldObj.rand.nextGaussian() * f3 + 1.0f;
+			item.motionZ = (float) worldObj.rand.nextGaussian() * f3;
+	
+		
+			worldObj.spawnEntityInWorld(item);
+			
 			jobDone = true;
+			
 		}else{
 			for(int i = 0; i < inv.getSizeInventory(); i++){
 				if(inv.isItemValidForSlot(i, new ItemStack(output))){
@@ -154,7 +167,17 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(!jobDone){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output)));
+			EntityItem item = new EntityItem(worldObj, xCoord, yCoord + 0.5F, zCoord, new ItemStack(output));
+			item.lifespan = 1200;
+			item.delayBeforeCanPickup = 10;
+			
+			float f3 = 0.05f;
+			item.motionX = (float) worldObj.rand.nextGaussian() * f3;
+			item.motionY = (float) worldObj.rand.nextGaussian() * f3 + 1.0f;
+			item.motionZ = (float) worldObj.rand.nextGaussian() * f3;
+	
+		
+			worldObj.spawnEntityInWorld(item);
 			amount--;
 			if(amount == 0){
 				Smelting = null;
@@ -208,7 +231,17 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(inv == null){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output, amount)));
+			EntityItem item = new EntityItem(worldObj, xCoord, yCoord + 0.5F, zCoord, new ItemStack(output));
+			item.lifespan = 1200;
+			item.delayBeforeCanPickup = 10;
+			
+			float f3 = 0.05f;
+			item.motionX = (float) worldObj.rand.nextGaussian() * f3;
+			item.motionY = (float) worldObj.rand.nextGaussian() * f3 + 1.0f;
+			item.motionZ = (float) worldObj.rand.nextGaussian() * f3;
+	
+		
+			worldObj.spawnEntityInWorld(item);
 			jobDone = true;
 		}else{
 			for(int i = 0; i < inv.getSizeInventory(); i++){
@@ -223,7 +256,17 @@ public class TileEntityVessel extends TileEntity {
 		}
 		
 		if(!jobDone){
-			worldObj.spawnEntityInWorld(new EntityItem(worldObj, xCoord, yCoord+1, zCoord, new ItemStack(output, amount)));
+			EntityItem item = new EntityItem(worldObj, xCoord, yCoord + 0.5F, zCoord, new ItemStack(output));
+			item.lifespan = 1200;
+			item.delayBeforeCanPickup = 10;
+			
+			float f3 = 0.05f;
+			item.motionX = (float) worldObj.rand.nextGaussian() * f3;
+			item.motionY = (float) worldObj.rand.nextGaussian() * f3 + 1.0f;
+			item.motionZ = (float) worldObj.rand.nextGaussian() * f3;
+	
+		
+			worldObj.spawnEntityInWorld(item);
 			this.amount--;
 			if(this.amount == 0){
 				Smelting = null;
