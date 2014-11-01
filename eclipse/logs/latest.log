@@ -1,8 +1,8 @@
-[21:08:26] [main/INFO]: Setting user: Player78
-[21:08:28] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:08:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
-[21:08:35] [Sound Library Loader/INFO]: Sound engine started
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
+[18:06:28] [main/INFO]: Setting user: Player140
+[18:06:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:06:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
+[18:06:38] [Sound Library Loader/INFO]: Sound engine started
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,7 +27,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -52,7 +52,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -77,7 +77,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -102,7 +102,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -127,7 +127,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -152,7 +152,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
+[18:06:39] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -177,10 +177,10 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:08:37] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:08:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
+[18:06:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:06:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:06:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AmazingCore
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreIlmenite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -208,7 +208,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreIlmenite.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreSilver.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -236,7 +236,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreSilver.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreBauxite.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -264,7 +264,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreBauxite.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreLead.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -292,7 +292,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreLead.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_null.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -320,7 +320,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_178_
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreTin.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -348,7 +348,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreTin.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
+[18:06:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/oreCopper.png
 java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -376,25 +376,57 @@ java.io.FileNotFoundException: minecraft:textures/blocks/oreCopper.png
 	at GradleStart.bounce(GradleStart.java:107) [start/:?]
 	at GradleStart.startClient(GradleStart.java:100) [start/:?]
 	at GradleStart.main(GradleStart.java:55) [start/:?]
-[21:08:37] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:08:37] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:08:38] [Sound Library Loader/INFO]: Sound engine started
-[21:08:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:08:54] [Server thread/INFO]: Generating keypair
-[21:08:54] [Server thread/INFO]: Preparing start region for level 0
-[21:08:56] [Server thread/INFO]: Changing view distance to 9, from 10
-[21:08:56] [Server thread/INFO]: Player78[local:E:ee5cfa14] logged in with entity id 314 at (-67.57410630769246, 6.11163302697389, 1621.1763777698238)
-[21:08:56] [Server thread/INFO]: Player78 joined the game
-[21:09:00] [Server thread/INFO]: Player78 has just earned the achievement [Taking Inventory]
-[21:09:00] [Client thread/INFO]: [CHAT] Player78 has just earned the achievement [Taking Inventory]
-[21:10:11] [Server thread/INFO]: Saving and pausing game...
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:10:11] [Server thread/INFO]: Stopping server
-[21:10:11] [Server thread/INFO]: Saving players
-[21:10:11] [Server thread/INFO]: Saving worlds
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:10:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:10:12] [Client thread/INFO]: Stopping!
+[18:06:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:06:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:06:41] [Sound Library Loader/INFO]: Sound engine started
+[18:06:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:06:47] [Server thread/INFO]: Generating keypair
+[18:06:47] [Server thread/INFO]: Preparing start region for level 0
+[18:06:48] [Server thread/INFO]: Changing view distance to 9, from 10
+[18:06:49] [Server thread/INFO]: Player140[local:E:adbc6419] logged in with entity id 246 at (-69.387904735072, 4.0, 1628.0369181328292)
+[18:06:49] [Server thread/INFO]: Player140 joined the game
+[18:07:26] [Server thread/INFO]: Player140 has just earned the achievement [Taking Inventory]
+[18:07:26] [Client thread/INFO]: [CHAT] Player140 has just earned the achievement [Taking Inventory]
+[18:07:36] [Server thread/INFO]: Saving and pausing game...
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:07:36] [Server thread/INFO]: Stopping server
+[18:07:36] [Server thread/INFO]: Saving players
+[18:07:36] [Server thread/INFO]: Saving worlds
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:07:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:07:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:07:40] [Server thread/INFO]: Generating keypair
+[18:07:40] [Server thread/INFO]: Preparing start region for level 0
+[18:07:41] [Server thread/INFO]: Changing view distance to 9, from 10
+[18:07:41] [Server thread/INFO]: Player140[local:E:9a511987] logged in with entity id 135599 at (-68.2285227130405, 4.0, 1624.4951556276988)
+[18:07:41] [Server thread/INFO]: Player140 joined the game
+[18:08:22] [Server thread/INFO]: Saving and pausing game...
+[18:08:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:08:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:08:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:08:23] [Server thread/INFO]: Stopping server
+[18:08:23] [Server thread/INFO]: Saving players
+[18:08:23] [Server thread/INFO]: Saving worlds
+[18:08:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:08:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:08:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:08:25] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:08:25] [Server thread/INFO]: Generating keypair
+[18:08:25] [Server thread/INFO]: Preparing start region for level 0
+[18:08:26] [Server thread/INFO]: Changing view distance to 9, from 10
+[18:08:26] [Server thread/INFO]: Player140[local:E:184ce86f] logged in with entity id 376717 at (-68.29666593174682, 4.0, 1624.5887800451783)
+[18:08:26] [Server thread/INFO]: Player140 joined the game
+[18:09:50] [Server thread/INFO]: Saving and pausing game...
+[18:09:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:09:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:09:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:09:51] [Server thread/INFO]: Stopping server
+[18:09:51] [Server thread/INFO]: Saving players
+[18:09:51] [Server thread/INFO]: Saving worlds
+[18:09:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:09:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:09:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:09:52] [Client thread/INFO]: Stopping!

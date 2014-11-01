@@ -46,8 +46,8 @@ public class TileEntityVessel extends TileEntity {
 		burnTime = tag.getInteger("burnTime");
 		fuelTime = tag.getInteger("fuelTime");
 		degreesCelcius = tag.getInteger("degreesCelcius");
+		//TODO: Make smelting go into NBT
 		this.markDirty();
-		//TODO: NEEDS FIX
 	}
 
 	public void writeToNBT(NBTTagCompound tag) {
@@ -69,7 +69,7 @@ public class TileEntityVessel extends TileEntity {
 		tag.setInteger("burnTime", burnTime);
 		tag.setInteger("fuelTime", fuelTime);
 		tag.setInteger("degreesCelcius", degreesCelcius);
-		//TODO: NEEDS FIX
+		//TODO: Make smelting go into NBT //Done?
 	}
 
 	public void updateEntity() {

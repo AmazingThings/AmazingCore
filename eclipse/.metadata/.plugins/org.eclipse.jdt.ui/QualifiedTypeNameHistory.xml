@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="com.amazingthings.core.blocks.Blocks"/>
 <fullyQualifiedTypeName name="com.amazingthings.core.items.Items"/>
 <fullyQualifiedTypeName name="com.amazingthings.core.recipes.VesselRecipes"/>
+<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagList"/>
 </qualifiedTypeNameHistroy>

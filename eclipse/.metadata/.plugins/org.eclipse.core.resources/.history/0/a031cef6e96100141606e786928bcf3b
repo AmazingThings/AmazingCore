@@ -47,7 +47,6 @@ public class TileEntityVessel extends TileEntity {
 		fuelTime = tag.getInteger("fuelTime");
 		degreesCelcius = tag.getInteger("degreesCelcius");
 		this.markDirty();
-		//TODO: NEEDS FIX
 	}
 
 	public void writeToNBT(NBTTagCompound tag) {
@@ -69,7 +68,6 @@ public class TileEntityVessel extends TileEntity {
 		tag.setInteger("burnTime", burnTime);
 		tag.setInteger("fuelTime", fuelTime);
 		tag.setInteger("degreesCelcius", degreesCelcius);
-		//TODO: NEEDS FIX
 	}
 
 	public void updateEntity() {
