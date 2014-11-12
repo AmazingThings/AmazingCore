@@ -8,7 +8,7 @@ public class OreLead extends Block{
 	public OreLead(Material m) {
 		super(m.rock);
 		this.setBlockName("oreLead");
-		this.setBlockTextureName("oreLead");
+		this.setBlockTextureName("atcore:oreLead");
 	}
 
 }

@@ -33,7 +33,8 @@ public class TileEntityVessel extends TileEntity {
         if(j == 1){
         	Smelting = ItemStack.loadItemStackFromNBT(nbttagcompound1).getItem();
         }
-		
+		nbttaglist = tag.getTagList("Item", 1);
+        
 		amount = tag.getInteger("amount");
 		burnTime = tag.getInteger("burnTime");
 		fuelTime = tag.getInteger("fuelTime");

@@ -8,7 +8,7 @@ public class OreTin extends Block{
 	public OreTin(Material m) {
 		super(m.rock);
 		this.setBlockName("oreTin");
-		this.setBlockTextureName("oreTin");
+		this.setBlockTextureName("atcore:oreTin");
 	}
 
 }

@@ -8,7 +8,7 @@ public class OreIlmenite extends Block{
 	public OreIlmenite(Material m) {
 		super(m.rock);
 		this.setBlockName("oreIlmenite");
-		this.setBlockTextureName("oreIlmenite");
+		this.setBlockTextureName("atcore:oreIlmenite");
 	}
 
 }

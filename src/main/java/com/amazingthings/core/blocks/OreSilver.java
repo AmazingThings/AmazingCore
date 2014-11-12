@@ -8,7 +8,7 @@ public class OreSilver extends Block{
 	public OreSilver(Material m) {
 		super(m.rock);
 		this.setBlockName("oreSilver");
-		this.setBlockTextureName("oreSilver");
+		this.setBlockTextureName("atcore:oreSilver");
 	}
 
 }

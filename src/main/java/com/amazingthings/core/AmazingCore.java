@@ -4,11 +4,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 
 import com.amazingthings.core.blocks.ATBlocks;
 import com.amazingthings.core.items.ATItems;
 import com.amazingthings.core.proxy.CommonProxy;
 import com.amazingthings.core.recipes.Recipes;
+import com.amazingthings.core.tileentity.TileEntityVessel;
 import com.amazingthings.core.worldgen.WorldGenOres;
 
 import cpw.mods.fml.common.Mod;
@@ -63,6 +65,7 @@ public class AmazingCore {
 	public void init(FMLInitializationEvent e) {
 		proxy.registerRenderThings();
 		GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
+		GameRegistry.registerTileEntity(com.amazingthings.core.tileentity.TileEntityVessel.class, "tileAtVessel");
 	}
 
 	@EventHandler

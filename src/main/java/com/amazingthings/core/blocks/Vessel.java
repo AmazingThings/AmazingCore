@@ -73,6 +73,8 @@ public class Vessel extends BlockContainer{
 			p.addChatMessage(new ChatComponentText(tile.burnTime+""));
 			p.addChatMessage(new ChatComponentText(tile.amount+""));
 			p.addChatMessage(new ChatComponentText(tile.Smelting+""));
+			System.out.println("worked");
+			return false;
 			
 		}
 		

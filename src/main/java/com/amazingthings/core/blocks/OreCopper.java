@@ -8,7 +8,7 @@ public class OreCopper extends Block{
 	public OreCopper(Material m) {
 		super(m.rock);
 		this.setBlockName("oreCopper");
-		this.setBlockTextureName("oreCopper");
+		this.setBlockTextureName("atcore:oreCopper");
 	}
 
 }

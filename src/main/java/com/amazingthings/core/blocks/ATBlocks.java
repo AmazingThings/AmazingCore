@@ -16,6 +16,7 @@ public class ATBlocks {
 	public static Block oreBauxite;
 	public static Block oreIlmenite;
 	public static Block oreSilver;
+	public static Block ULTRAHYPERAMAZING;
 
 	public static Block vessel;
 	public static Block filter;
@@ -28,6 +29,8 @@ public class ATBlocks {
 		oreIlmenite = new OreIlmenite(Material.rock).setCreativeTab(AmazingCore.tabCore).setHardness(3.0f);
 		oreSilver = new OreSilver(Material.rock).setCreativeTab(AmazingCore.tabCore).setHardness(2.5f);		
 
+		ULTRAHYPERAMAZING = new UHA(Material.cake).setCreativeTab(AmazingCore.tabCore).setHardmess(1.0f);
+		
 		oreCopper.setHarvestLevel("pickaxe", 1);
 		oreTin.setHarvestLevel("pickaxe", 1);
 		oreLead.setHarvestLevel("pickaxe", 2);
