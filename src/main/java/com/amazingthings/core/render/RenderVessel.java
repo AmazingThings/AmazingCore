@@ -2,6 +2,7 @@ package com.amazingthings.core.render;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -13,10 +14,13 @@ import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
 import com.amazingthings.core.model.ModelVessel;
+import com.amazingthings.core.tileentity.TileEntityVessel;
 
 public class RenderVessel extends TileEntitySpecialRenderer {
         
         private final ModelVessel model;
+        public static TileEntityVessel v;
+        
         
         public RenderVessel() {
                 this.model = new ModelVessel();
@@ -31,6 +35,7 @@ public class RenderVessel extends TileEntitySpecialRenderer {
         
         @Override
         public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {
+
                 GL11.glPushMatrix();
                 GL11.glTranslatef((float) x + 0.5F, (float) y + 1.5F, (float) z + 0.5F);
         		Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("atcore:textures/model/Vessel.png"));
@@ -39,6 +44,7 @@ public class RenderVessel extends TileEntitySpecialRenderer {
                 this.model.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
                 GL11.glPopMatrix();
                 GL11.glPopMatrix();
+                
         }
 
         private void adjustLightFixture(World world, int i, int j, int k, Block block) {

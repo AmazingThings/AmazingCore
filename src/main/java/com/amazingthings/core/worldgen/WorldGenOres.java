@@ -2,13 +2,13 @@ package com.amazingthings.core.worldgen;
 
 import java.util.Random;
 
-import com.amazingthings.core.AmazingCore;
-import com.amazingthings.core.blocks.Blocks;
-
-import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+
+import com.amazingthings.core.blocks.ATBlocks;
+
+import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGenOres implements IWorldGenerator{
 
@@ -37,7 +37,7 @@ public class WorldGenOres implements IWorldGenerator{
 			int y = rand.nextInt(64);
 			int z = cZ + rand.nextInt(16);
 			
-        	(new WorldGenMinable(Blocks.oreBauxite, 13)).generate(world, rand, x, y, z);
+        	(new WorldGenMinable(ATBlocks.oreBauxite, 13)).generate(world, rand, x, y, z);
 
 		}
 	}

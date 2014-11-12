@@ -1,22 +1,14 @@
 package com.amazingthings.core.tileentity;
 
-import com.amazingthings.core.AmazingCore;
-import com.amazingthings.core.recipes.VesselRecipes;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockChest;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityChest;
-import static com.amazingthings.core.items.Items.*;
+
+import com.amazingthings.core.recipes.VesselRecipes;
 
 public class TileEntityVessel extends TileEntity {
 
@@ -79,12 +71,13 @@ public class TileEntityVessel extends TileEntity {
 
 		if(fuelTime > 0) {
 			fuelTime--;
+			sendUpdate = true;
 		}
 		if(!worldObj.isRemote) {
 			if(fuelTime == 0 && this.canSmelt()) {
 				if(fuelTime > 0) {
 					sendUpdate = true;
-
+					
 				}
 			}
 		}
@@ -94,9 +87,14 @@ public class TileEntityVessel extends TileEntity {
 			if(burnTime == 200) {
 				burnTime = 0;
 				smeltItems(getSmeltingResult().getItem(), getSmeltingResult().stackSize);
+				
+			}
+			if(sendUpdate) {
+				this.markDirty();
 			}
 		} 
-		if(!canSmelt() && amount > 0)smeltItem(Smelting);
+		//if(!canSmelt() && amount > 0)smeltItem(Smelting);
+		
 	}
 
 	private void smeltItem(Item output) {
@@ -277,9 +275,6 @@ public class TileEntityVessel extends TileEntity {
 				Smelting = null;
 			}
 		}
-		
-		this.markDirty();
-
 	}
 
 	public boolean canSmelt() {
@@ -294,5 +289,17 @@ public class TileEntityVessel extends TileEntity {
 	}
 	public int getRequiredDegrees(){
 		return VesselRecipes.smelting().getDegreesNeeded(new ItemStack(Smelting));
+	}
+	
+	public int getCurrentDegrees() {
+		return this.degreesCelcius;
+	}
+	
+	public void addDegrees(int amount) {
+		this.degreesCelcius = this.degreesCelcius + amount;
+	}
+	
+	public void setDegrees(int amount) {
+		this.degreesCelcius = amount;
 	}
 }

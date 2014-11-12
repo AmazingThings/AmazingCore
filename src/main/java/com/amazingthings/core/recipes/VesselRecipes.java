@@ -5,14 +5,12 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.amazingthings.core.blocks.Blocks;
-import com.amazingthings.core.items.Items;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemFishFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
+
+import com.amazingthings.core.blocks.ATBlocks;
+import com.amazingthings.core.items.ATItems;
 
 public class VesselRecipes {
     private static final VesselRecipes smeltingBase = new VesselRecipes();
@@ -32,7 +30,7 @@ public class VesselRecipes {
     private VesselRecipes()
     {
     	//add?toList(input, itemstackOutput, degrees heat)
-        addBlocktoList(Blocks.oreBauxite, new ItemStack(Items.ingotAluminium), 175);
+        addBlocktoList(ATBlocks.oreBauxite, new ItemStack(ATItems.ingotAluminium), 175);
     }
 
     public void addBlocktoList(Block inputBlock, ItemStack outputstack, int degrees)

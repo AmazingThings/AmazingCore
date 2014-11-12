@@ -1,27 +1,24 @@
 package com.amazingthings.core;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
-import com.amazingthings.core.blocks.*;
-import com.amazingthings.core.itemblocks.*;
-import com.amazingthings.core.items.*;
+import com.amazingthings.core.blocks.ATBlocks;
+import com.amazingthings.core.items.ATItems;
 import com.amazingthings.core.proxy.CommonProxy;
 import com.amazingthings.core.recipes.Recipes;
-import com.amazingthings.core.worldgen.*;
+import com.amazingthings.core.worldgen.WorldGenOres;
 
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import static com.amazingthings.core.blocks.Blocks.*;
-import static com.amazingthings.core.items.Items.*;
 
 @Mod(modid = AmazingCore.modid, version = AmazingCore.version, name = AmazingCore.name)
 public class AmazingCore {
@@ -41,7 +38,7 @@ public class AmazingCore {
 
 		@Override
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(vessel);
+			return Item.getItemFromBlock(ATBlocks.vessel);
 		}
 
 	};
@@ -55,9 +52,9 @@ public class AmazingCore {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 							   //MAY BE REPLACED WITH:
-		Blocks.registerBlocks();      //Blocks.registerBlocks();
-		Items.registerItems();       //Items.registerItems();
-		Blocks.registerModelBlocks(); //Blocks.registerModelBlocks
+		ATBlocks.registerBlocks();      //Blocks.registerBlocks();
+		ATItems.registerItems();       //Items.registerItems();
+		ATBlocks.registerModelBlocks(); //Blocks.registerModelBlocks
 		Recipes.registerRecipes();
 		Recipes.registerCustomMachineRecipes();
 	}

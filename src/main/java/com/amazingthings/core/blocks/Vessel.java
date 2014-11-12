@@ -8,10 +8,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityFurnace;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
 import com.amazingthings.core.AmazingCore;
 import com.amazingthings.core.tileentity.TileEntityVessel;
+import com.amazingthings.core.items.*;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -60,9 +63,17 @@ public class Vessel extends BlockContainer{
 
 		TileEntityVessel tile = (TileEntityVessel)w.getTileEntity(x, y, z);
 		ItemStack item = p.getCurrentEquippedItem();
-
+		
 		if(tile == null || p.isSneaking() || item == null){
 			return false;
+		}
+		
+		if(item == new ItemStack(Items.arrow)) {
+			p.addChatMessage(new ChatComponentText(tile.fuelTime+""));
+			p.addChatMessage(new ChatComponentText(tile.burnTime+""));
+			p.addChatMessage(new ChatComponentText(tile.amount+""));
+			p.addChatMessage(new ChatComponentText(tile.Smelting+""));
+			
 		}
 		
 		if(TileEntityFurnace.isItemFuel(item)){
@@ -72,10 +83,13 @@ public class Vessel extends BlockContainer{
 		}
 
 		if(tile.Smelting == null){
+			if(item != new ItemStack(Items.arrow)) {
 			tile.Smelting = item.getItem();
 			tile.amount++;
 			item.stackSize--;
+			}
 		}else if(tile.Smelting == item.getItem()){
+			
 			tile.amount++;
 			item.stackSize--;
 		}else{
