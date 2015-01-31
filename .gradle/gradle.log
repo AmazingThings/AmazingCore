@@ -5,52 +5,6 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
-:clean
-:cleanCache
-:extractMcpData
-:getVersionJson
-:extractUserDev
-:genSrgs
-:extractNatives
-:getAssetsIndex
-:getAssets
-Current status: 5/686   0%
-Current status: 131/686   19%
-Current status: 215/686   31%
-Current status: 306/686   44%
-Current status: 341/686   49%
-Current status: 435/686   63%
-Current status: 494/686   72%
-Current status: 557/686   81%
-Current status: 586/686   85%
-Current status: 650/686   94%
-Current status: 686/686   100%
-:makeStartwarning: [options] bootstrap class path not set in conjunction with -source 1.6
-1 warning
-
-:downloadMcpTools
-:downloadClient
-:downloadServer
-:mergeJars
-Adding cpw/mods/fml/relauncher/SideOnly.class
-Adding cpw/mods/fml/relauncher/Side.class
-:deobfuscateJar
-Applying SpecialSource...
-Applying Exceptor...
-:decompile
-:processSources
-Injecting fml files
-Applying fml patches
-Applying forge patches
-:remapJar
-:extractMinecraftSrc
-:recompMinecraftNote: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-
-:repackMinecraft
-:setupDecompWorkspace
 :eclipseClasspath
 :eclipseJdt
 :eclipseProject
@@ -58,4 +12,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 13 mins 29.229 secs
+Total time: 13.971 secs
